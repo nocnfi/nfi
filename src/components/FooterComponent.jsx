@@ -9,10 +9,10 @@ const FooterComponent = () => {
         <footer >
 
             {/* Footer Section 1 */}
-            <div className='p-2 sm:p-10 bg-blue-100 xl:mx-64'>
+            <div className='flex p-10 bg-blue-100'>
 
                 {/* Location & Contact */}
-                <div className='flex justify-around text-center px-2 py-6 sm:p-6'>
+                {/* <div className='flex justify-around text-center px-2 py-6 sm:p-6'>
                     <div>
                         <div className='flex justify-center gap-2'>
                             <img className='' src={pinIcon} alt="" />
@@ -28,34 +28,46 @@ const FooterComponent = () => {
                         </div>
                         <p>+62 856-9217-3125</p>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Tagline */}
-                <div className='flex flex-col items-center p-6 text-center gap-4'>
-                    <img className='w-32' src={nfiLogo} alt="" />
-                    <p>Kami selalu mengedepankan Kepuasan dan Kenyamanan Pelanggan dengan Rekomendasi Terbaik.</p>
+                <div className='flex flex-col text-xs gap-2 pr-32'>
+                    <img className='w-46 mb-4' src={nfiLogo} alt="" />
+                    <div>
+                        <h3 className='font-bold'>Email</h3>
+                        <p>nocnfi@gmail.com</p>
+                    </div>
+                    <div>
+                        <h3 className='font-bold'>Alamat</h3>
+                        <p>Perumnas BLOK C No.5 7</p>
+                    </div>
+
                 </div>
 
                 {/* Link */}
-                <div className='flex justify-around text-center p-6'>
-                    <div>
-                        <h2 className='text-start font-bold'>Dapatkan Bantuan</h2>
-                        <div className='text-start flex flex-col text-blue-400 text-sm'>
-                            <a href="">Pemasangan Baru</a>
-                            <a href="">Kendala Internet</a>
-                            <a href="">Berhenti Langganan</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 className='text-start font-bold'>Tentang Kami</h2>
-                        <div className='text-start flex flex-col text-blue-400 text-sm'>
-                            <a href="">Profil Perusahaan</a>
-                            <a href="">Hubungan Mitra</a>
-                            <a href="">Layanan Kami</a>
-                        </div>
-                    </div>
-                </div>
+                <div className='w-full'>
 
+                    <h2 className='text-start font-bold mb-4'>SITEMAP</h2>
+                    <div className='flex gap-4 w-full text-xs'>
+                        <div>
+                            <h2 className='text-start font-bold'>Dapatkan Bantuan</h2>
+                            <div className='text-start flex flex-col text-blue-400 text-sm'>
+                                <a href="">Pemasangan Baru</a>
+                                <a href="">Kendala Internet</a>
+                                <a href="">Berhenti Langganan</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className='text-start font-bold'>Tentang Kami</h2>
+                            <div className='text-start flex flex-col text-blue-400 text-sm'>
+                                <a href="">Profil Perusahaan</a>
+                                <a href="">Hubungan Mitra</a>
+                                <a href="">Layanan Kami</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
             
