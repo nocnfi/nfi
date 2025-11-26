@@ -9,7 +9,7 @@ const FooterComponent = () => {
         <footer >
 
             {/* Footer Section 1 */}
-            <div className='flex p-10 bg-blue-100'>
+            <div className='flex p-10 bg-gray-800 text-white'>
 
                 {/* Location & Contact */}
                 {/* <div className='flex justify-around text-center px-2 py-6 sm:p-6'>
@@ -32,14 +32,16 @@ const FooterComponent = () => {
 
                 {/* Tagline */}
                 <div className='flex flex-col text-xs gap-2 pr-32'>
-                    <img className='w-46 mb-4' src={nfiLogo} alt="" />
+                    <div className='bg-white pt-4 pl-10 pr-4 -translate-x-10 rounded-r-2xl'>
+                        <img className='w-46 mb-4' src={nfiLogo} alt="" />
+                    </div>
                     <div>
                         <h3 className='font-bold'>Email</h3>
                         <p>nocnfi@gmail.com</p>
                     </div>
                     <div>
                         <h3 className='font-bold'>Alamat</h3>
-                        <p>Perumnas BLOK C No.5 7</p>
+                        <p>Perumnas BLOK C No.57</p>
                     </div>
 
                 </div>
@@ -72,8 +74,8 @@ const FooterComponent = () => {
             </div>
             
             {/* Copyright Setion */}
-            <div className='w-full flex justify-center bg-gray-800 text-white p-6'>
-                <p>© 2025 PT Nada Freedom Indonesia - by NOC</p>
+            <div className='w-full flex justify-center bg-gray-800 text-sm p-6'>
+                <p className='bg-white text-gray-800 px-4 pt-2 pb-2 translate-y-6 rounded-t-2xl'>© 2025 PT Nada Freedom Indonesia - by NOC</p>
             </div>
         </footer>
     </>
